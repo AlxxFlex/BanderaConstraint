@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Layout Verde -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/verdeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#006847"
+        app:layout_constraintHeight_percent="0.33"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="19dp"
+            android:layout_height="274dp"
+            android:background="#FFFF00"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="19dp"
+            android:layout_height="274dp"
+            android:background="#FFFF00"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="3dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Layout Blanco (con espacio para imagen) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/blancoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_constraintHeight_percent="0.34"
+        app:layout_constraintTop_toBottomOf="@id/verdeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Imagen en el centro de la franja blanca -->
+        <ImageView
+            android:id="@+id/centroImagen"
+            android:layout_width="241dp"
+            android:layout_height="178dp"
+            android:contentDescription="Imagen central de la bandera"
+            android:src="@drawable/escudo"
+            android:rotation="90"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.495" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="21dp"
+            android:layout_height="276dp"
+            android:background="#FFFF00"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="21dp"
+            android:layout_height="276dp"
+            android:background="#FFFF00"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="5dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Layout Rojo -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rojoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#CE1126"
+        app:layout_constraintHeight_percent="0.33"
+        app:layout_constraintTop_toBottomOf="@id/blancoLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="21dp"
+            android:layout_height="276dp"
+            android:background="#FFFF00"
+            tools:layout_editor_absoluteX="297dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="21dp"
+            android:layout_height="276dp"
+            android:background="#FFFF00"
+            tools:layout_editor_absoluteX="374dp"
+            tools:layout_editor_absoluteY="1dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
